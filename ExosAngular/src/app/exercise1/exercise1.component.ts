@@ -7,9 +7,9 @@ import { FormsModule } from "@angular/forms";
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
-    <header [style.font-family]="selectedFont" [style.font-size.px]="selectedSize" [style.text-align]="alignment">
+    <h2 id="hello" [style.font-family]="selectedFont" [style.font-size.px]="selectedSize" [style.text-align]="alignment">
       Hello {{ name.toUpperCase() }}!
-    </header>
+    </h2>
     <div id="textFormat">
       <label for="nameInput">Enter name:</label>
       <input type="text" id="nameInput" [(ngModel)]="name" /> <!--ngModel is to bind input values to elements-->

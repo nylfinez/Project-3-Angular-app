@@ -1,3 +1,10 @@
+#hello {
+    margin: 0;
+    display: block;
+    background-color: var(--primary-color);
+    color: white;
+}
+
 #textFormat {
     width: 60%;
     margin: 10px auto;

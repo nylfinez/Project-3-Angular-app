@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { Exercise1Component } from './exercise1/exercise1.component';
 import { Exercise2Component } from './exercise2/exercise2.component';
+import { Exercise3Component } from './exercise3/exercise3.component';
 
 @Component({
   selector: 'app-root',
