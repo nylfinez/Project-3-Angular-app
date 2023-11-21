@@ -34,7 +34,6 @@ import { FormsModule } from "@angular/forms";
         <label for="alignRight">Right</label>
       </div>
     </div>
-    <hr>
   `,
   styleUrl: './exercise1.component.css'
 })

@@ -49,6 +49,7 @@ label {
     align-self: baseline;
     font-size: 20px;
     font-weight: bold;
+    color: var(--primary-color);
 }
 
 .history {
@@ -61,7 +62,7 @@ h2 {
 
 li {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     margin-bottom: 10px;
 }
 
@@ -71,10 +72,13 @@ li p {
 
 #time {
     text-decoration: underline;
-    font-weight: bold;
 }
 
 #result {
     font-size: 26px;
     font-weight: bold;
+}
+
+li button {
+    margin-top: 0;
 }

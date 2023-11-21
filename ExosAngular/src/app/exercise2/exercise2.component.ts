@@ -35,7 +35,6 @@ import { FormsModule } from '@angular/forms';
         </ul>
       </div>
     </div>
-    <hr>
   `,
   styleUrl: './exercise2.component.css'
 })
