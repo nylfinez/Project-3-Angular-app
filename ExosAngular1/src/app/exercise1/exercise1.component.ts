@@ -1,15 +1,15 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-exercise1',
   standalone: true,
   imports: [CommonModule, FormsModule],
   template: `
-    <header [style.font-family]="selectedFont" [style.font-size.px]="selectedSize" [style.text-align]="alignment">
+    <p id="message" [style.font-family]="selectedFont" [style.font-size.px]="selectedSize" [style.text-align]="alignment">
       Hello {{ name.toUpperCase() }}!
-    </header>
+    </p>
     <div id="textFormat">
       <label for="nameInput">Enter name:</label>
       <input type="text" id="nameInput" [(ngModel)]="name" /> <!--ngModel is to bind input values to elements-->
@@ -40,6 +40,6 @@ import { FormsModule } from "@angular/forms";
 export class Exercise1Component {
   name: string = '';
   selectedFont: string = 'Arial';
-  selectedSize: number = 22;
+  selectedSize: number = 24;
   alignment: string = 'left';
 }
