@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TransactionService } from '../transaction.service';
 
@@ -28,8 +28,9 @@ import { TransactionService } from '../transaction.service';
 })
 export class Exercise3Component implements OnInit {
   transactionList: any[] = [];
+  transactionService: TransactionService = inject(TransactionService)
 
-  constructor(private transactionService: TransactionService) {}
+  constructor() {}
 
   ngOnInit() {
     this.transactionService.getTransactions().subscribe(
