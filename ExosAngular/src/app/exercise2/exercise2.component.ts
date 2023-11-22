@@ -64,9 +64,9 @@ export class Exercise2Component {
     }
   
     const currentTime = new Date().toLocaleTimeString() + ': ';
-    const operationString = `${this.number1} ${this.operation} ${this.number2} =`;
+    const operationString = `${this.number1} ${this.operation} ${this.number2} =`; //format equation
     const historyEntry = { time: currentTime, operation: operationString, result: this.result}
-    this.history.push(historyEntry);
+    this.history.push(historyEntry); //add to history
   }
   clearEntry(index: number) {
     this.history.splice(index, 1); //delete only 1 item

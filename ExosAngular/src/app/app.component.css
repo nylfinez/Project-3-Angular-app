@@ -1,0 +1,5 @@
+h3 {
+    margin: 0;
+    background-color: var(--heading-color);
+    color: white;
+}
