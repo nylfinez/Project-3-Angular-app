@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { Exercise1Component } from './exercise1/exercise1.component';
-import { Exercise2Component } from './exercise2/exercise2.component';
+import { Exercise1Component } from "./exercise1/exercise1.component";
+import { Exercise2Component } from "./exercise2/exercise2.component";
 import { Exercise3Component } from './exercise3/exercise3.component';
 
 @Component({
@@ -16,11 +16,11 @@ import { Exercise3Component } from './exercise3/exercise3.component';
   <h3>Exercise 2</h3>
   <app-exercise2></app-exercise2>
 
-  <h3>Exercise 3</h3>
-  <app-exercise3></app-exercise3>
+  <h3>Exercise 3</h3> <!--Commented out the 3rd exercise becasue the other 2 won't load while the 3rd one still has errors-->
+  <!--<app-exercise3></app-exercise3>-->
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ExosAngular'; //TODO change
+  title = 'ExosAngular';
 }
